@@ -1,10 +1,7 @@
-package classwork.three.home;
+package hometask.three;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-//import java.util.Scanner;
-import java.util.List;
-import java.util.ArrayList;
 import java.io.File;
 
 public class Main {
@@ -13,7 +10,7 @@ public class Main {
 		File file = new File("TestFile.txt");
 		FileReader fr = new FileReader();
 		try {
-			System.out.println(fr.textAnalyzer(fr.textGetter(file)));
+			fr.filePrinter(fr.textAnalyzer(fr.textGetter(file)), "Results.txt");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

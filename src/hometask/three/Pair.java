@@ -1,6 +1,6 @@
-package classwork.three.home;
+package hometask.three;
 
-public class Pair<Ltr, Cntr> {
+public class Pair<L, C> {
 
 	private Object letter;
 	private Object counter;
@@ -9,25 +9,25 @@ public class Pair<Ltr, Cntr> {
 		super();
 	}
 
-	public Pair(Ltr letter, Cntr counter) {
+	public Pair(L letter, C counter) {
 		super();
 		this.letter = letter;
 		this.counter = counter;
 	}
 
-	public Ltr getLetter() {
-		return (Ltr) letter;
+	public L getLetter() {
+		return (L) letter;
 	}
 
-	public void setLetter(Ltr letter) {
+	public void setLetter(L letter) {
 		this.letter = letter;
 	}
 
-	public Cntr getCounter() {
-		return (Cntr) counter;
+	public C getCounter() {
+		return (C) counter;
 	}
 
-	public void setCounter(Cntr counter) {
+	public void setCounter(C counter) {
 		this.counter = counter;
 	}
 
